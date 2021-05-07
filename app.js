@@ -110,38 +110,39 @@ function createCard(arr){
 // Scroll Infini
 
 window.addEventListener('scroll', () => {
+
     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
     //scrollTop = scroll depuis le top
-    //scrollHeight = scroll total
-    //clientHeight = hauteur de la fenêtre, partie visible
-    //console.log(scrollTop, scrollHeight, clientHeight);
+    // scrollHeight = scroll total
+  //   clientHeight = hauteur de la fenêtre, partie visible.
 
-    if(clientHeight + scrollTop >= scrollHeight -20) {
+    if(clientHeight + scrollTop >= scrollHeight - 20) {
         addPoke(6);
     }
+
 })
 
 let index = 21;
 
 function addPoke(nb) {
-
     if(index > 151) {
         return;
     }
     const arrToAdd = allPokemon.slice(index, index + nb);
+    console.log(index, index + nb);
     createCard(arrToAdd);
     index += nb;
 }
 
-// Recherche
+// Recherche 
 
+// const formRecherche = document.querySelector('form');
+// formRecherche.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     recherche();
+    // })
+    
 searchInput.addEventListener('keyup', recherche);
-
-/*const formRecherche = document.querySelector('form');
-formRecherche.addEventListener('submit', (e) => {
-    e.preventDefault();
-    recherche();
-})*/
 
 function recherche(){
 
@@ -153,7 +154,8 @@ function recherche(){
     filter = searchInput.value.toUpperCase();
     allLi = document.querySelectorAll('li');
     allTitles = document.querySelectorAll('li > h5');
-
+    
+    
     for(i = 0; i < allLi.length; i++) {
 
         titleValue = allTitles[i].innerText;
@@ -163,8 +165,17 @@ function recherche(){
         } else {
             allLi[i].style.display = "none";
         }
+
     }
+
 }
+
+
+
+
+
+
+
 
 // Animation Input
 

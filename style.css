@@ -7,21 +7,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #333;
+    color: #333;
 }
-
 h1 {
     text-align: center;
     padding: 25px 0;
     color: #f1f1f1;
 }
-
 .recherche-poke {
     max-width: 700px;
     width: 70%;
     min-width: 450px;
     margin: 30px auto;
     position: relative;
-    display:flex;
+    display: flex;
 }
 .inp-group {
     width: 100%;
@@ -42,7 +41,6 @@ h1 {
     transform: translateY(-50%);
     padding-left: 8px;
     transition: all 0.3s ease-in;
-
 }
 
 .recherche-poke button {
@@ -57,8 +55,8 @@ h1 {
     top: -15px;
     padding-left: 5px;
     color: #f1f1f1;
-
 }
+
 
 /* Liste des cartes */
 
@@ -68,7 +66,6 @@ h1 {
     height: auto;
     margin: 0 auto;
 }
-
 ul {
     list-style-type: none;
     display: flex;
@@ -87,14 +84,13 @@ ul {
     align-items: center;
     flex-direction: column;
 }
-
 .liste-poke h5 {
     font-size: 19px;
-
 }
 .liste-poke p {
     font-size: 18px;
 }
+
 /* Anim loader */
 
 .loader {
@@ -125,7 +121,6 @@ ul {
 .point:nth-child(3) {
     animation-delay: 0.3s;
 }
-
 @keyframes monte {
     100% {
         transform: translateY(-30px);
