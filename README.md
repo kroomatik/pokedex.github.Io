@@ -1,3 +1,3 @@
-# pokedex.github.io
-liste de pokemon fait via l'API pokemon, le tout codé avec  du HTML5, CSS et JavaScript
-![](https://giphy.com/gifs/NkQ0aHIU84zE0P01qJ)
+# Pokedex.github.io
+Pokedex fait en JS HtML CSS et via un API
+![](https://media.giphy.com/media/NkQ0aHIU84zE0P01qJ/giphy.gif)
